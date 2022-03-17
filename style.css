@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************
+* Part-1
+*************/
+
+.part-1 {
+  background-color: #dde8ea;
+  width: 32%;
+  height: 98vh;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+.part-1-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6%;
+  color: #000;
+}
+
+.part-1-header h3 {
+  font-size: 15px;
+  display: inline;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.part-1-header h2 {
+  font-size: 15px;
+  display: inline;
+  font-weight: bold;
+}
+
+/* Tag */
+
+.tags {
+  margin-top: 10%;
+  margin-left: 26%;
+}
+
+.tags h2 {
+  font-size: 20px;
+  display: flex;
+  font-weight: 300;
+}
+
+.tags h5 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 14px 45px;
+  display: inline;
+  margin-right: 12px;
+  font-size: 13px;
+}
+
+.tag-container-1 {
+  margin-top: 25px;
+}
+
+.tag-container-2 {
+  margin-top: 35px;
+}
+
+/**********
+* Image Slider
+**********/
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+.main_view {
+  width: 100%;
+  height: 27rem;
+  margin-left: 55%;
+  margin-top: 15%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  border-radius: 15px;
+  z-index: 999;
+}
+.main_view img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.side_view {
+  position: absolute;
+  top: 520px;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  overflow-x: scroll;
+  height: 60vh;
+}
+.side_view img {
+  width: 7rem;
+  height: 6rem;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 0.4rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+/**************
+Part-2
+**************/
+
+.part-2 {
+  margin-left: 32%;
+  position: absolute;
+  top: 5px;
+  width: 68%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Dropdown */
+
+.dropbtn {
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  letter-spacing: 1.5px;
+  margin-top: 8px;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.part-2 h5 {
+  display: inline;
+  margin-left: 150px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+/*******
+* Product Name
+********/
+
+.product-info {
+  margin-left: 45px;
+  margin-top: 35px;
+}
+
+.part-2 h1 {
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  font-size: 43px;
+}
+
+.part-2 h4 {
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+
+/*********
+*Rate
+*********/
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+  display: inline;
+  margin-top: 20px;
+  margin-left: 23px;
+  margin-right: 11px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1.3em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 23px;
+  color: #d1d1d1;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ff7935;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #ff7935;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #ff7935;
+}
+
+.review {
+  margin-top: 10px;
+  margin-left: 54px;
+  display: inline;
+}
+
+.review h4 {
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 2.5px;
+  margin-left: 10px;
+}
+
+.review span {
+  position: absolute;
+  left: 95px;
+}
+
+.review h5 {
+  color: rgba(206, 206, 206, 255);
+  font-size: 14px;
+}
+
+#build {
+  color: #ff7935;
+  display: inline;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 240px;
+  top: 26.5%;
+}
+
+#price {
+  display: inline-block;
+  position: absolute;
+  right: 80px;
+  top: 26%;
+}
+
+/*********
+Heart
+*********/
+#heart {
+  position: absolute;
+  width: 40px;
+  right: 150px;
+  top: 110px;
+}
+
+/*********
+Product Desc
+*********/
+
+.product-desc {
+  position: absolute;
+  top: 35%;
+  left: 49%;
+  font-family: "Poppins", sans-serif;
+  margin-right: 35px;
+}
+
+.product-desc h3 {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.product-desc p {
+  letter-spacing: 1px;
+  padding-right: 30px;
+  line-height: 28px;
+  word-spacing: 3px;
+  font-weight: 100;
+}
+
+#avail {
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#avail span {
+  margin-left: 10px;
+}
+
+#card-btn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff7935;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  right: 70px;
+  top: 340px;
+}
+
+#card-btn:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#card-btn:active {
+  transform: translateY(-1px);
+}
